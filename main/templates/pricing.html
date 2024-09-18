@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Pricing{% endblock %}
+
+{% block content %}
+<div class="pricing-container py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Pricing Plans</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="pricing-card shadow-lg p-4 rounded">
+                    <h3 class="pricing-title">Basic Plan</h3>
+                    <p class="price">$19/month</p>
+                    <ul class="list-unstyled">
+                        <li>Access to basic features</li>
+                        <li>Limited support</li>
+                        <li>Standard updates</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="pricing-card shadow-lg p-4 rounded">
+                    <h3 class="pricing-title">Premium Plan</h3>
+                    <p class="price">$39/month</p>
+                    <ul class="list-unstyled">
+                        <li>All features from Basic</li>
+                        <li>Priority support</li>
+                        <li>Advanced analytics</li>
+                        <li>Early access to new features</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="trial-option text-center mt-5">
+            <h2>Try Before You Buy</h2>
+            <p class="lead">Start your 14-day free trial today and see how our system works for you. No credit card required.</p>
+            <button class="btn btn-success btn-lg">Start Free Trial</button>
+            <!-- <button class="btn btn-success btn-lg" onclick="location.href='https://schoolsystem.com/start-free-trial?ref=website&trial=14-days'">Start Free Trial</button> -->
+
+        </div>
+        <div class="faq-section mt-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="faq-item border p-3 rounded">
+                        <h4>What does the free trial include?</h4>
+                        <p>During the trial period, you’ll have full access to all features of our Premium Plan. You can explore all functionalities and see how our system fits your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="faq-item border p-3 rounded">
+                        <h4>How do I cancel my trial?</h4>
+                        <p>You can cancel anytime during the trial period without any charge. Simply go to your account settings and select the option to cancel your trial.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="faq-item border p-3 rounded">
+                        <h4>Will I be charged after the trial ends?</h4>
+                        <p>No, you won’t be charged if you cancel before the trial ends. If you decide to continue, you can choose a plan that suits you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials text-center mt-5">
+            <h2 class="mb-4">What Our Clients Say</h2>
+            <blockquote class="blockquote mx-auto" style="max-width: 600px;">
+                <p>"This trial gave us a great insight into how effective the system is. The features are comprehensive and the support is excellent!"</p>
+                <footer class="blockquote-footer">- Alex Johnson, IT Manager</footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+{% endblock %}

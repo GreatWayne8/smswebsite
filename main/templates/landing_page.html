@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="homepage-container">
+    <div class="background-overlay">
+        <div class="container my-5">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold">Welcome to Our School Management System</h1>
+                <p class="lead text-muted">Streamline your school's administrative tasks with our all-in-one solution.</p>
+                <a href="{% url 'features' %}" class="btn btn-primary btn-lg mt-3">Explore Features</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="bi bi-building fa-3x"></i>
+                <h3 class="my-3">For Schools</h3>
+                <p>Manage admissions, attendance, exams, and more with ease.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-person fa-3x"></i>
+                <h3 class="my-3">For Teachers</h3>
+                <p>Track student performance, manage grades, and communicate with parents.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-parents fa-3x"></i>
+                <h3 class="my-3">For Parents</h3>
+                <p>Stay informed with real-time updates on your child's progress.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

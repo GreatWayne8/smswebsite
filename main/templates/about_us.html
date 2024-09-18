@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">About Us</h1>
+    <div class="team-section">
+        <h2 class="text-center mb-4">Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-6 text-center mb-4">
+                <div class="team-member">
+                    <img src="{% static 'img/team-member1.jpg' %}" alt="Jane Doe" class="img-fluid rounded-circle mb-3">
+                    <h3>Jane Doe</h3>
+                    <p class="text-muted">CEO</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <div class="team-member">
+                    <img src="{% static 'img/team-member2.jpg' %}" alt="John Smith" class="img-fluid rounded-circle mb-3">
+                    <h3>John Smith</h3>
+                    <p class="text-muted">CTO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company-story my-5">
+        <h2 class="text-center mb-4">Our Story</h2>
+        <p class="text-center">We started with a mission to simplify school management and make administrative tasks easier for educational institutions. Our journey has been fueled by a commitment to innovation and excellence in the field of educational technology.</p>
+    </div>
+    <div class="testimonials my-5">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div class="blockquote text-center">
+            <p class="mb-4">"This system has revolutionized how we manage our school. Highly recommend!"</p>
+            <footer class="blockquote-footer">- School Principal</footer>
+        </div>
+    </div>
+</div>
+{% endblock %}

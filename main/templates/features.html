@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}Features{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-4">Our Features</h1>
+    <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Dashboard</div>
+                <div class="feature-content">
+                    <p>View school demographics and analytics. Admins only.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">News and Events</div>
+                <div class="feature-content">
+                    <p>Access news and events for all users.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Student Management</div>
+                <div class="feature-content">
+                    <p>Admins can add, update, or delete students and lecturers.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Course Management</div>
+                <div class="feature-content">
+                    <p>Students can add and drop courses. Manage courses by semester.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Grading System</div>
+                <div class="feature-content">
+                    <p>Calculate students' grades automatically. Includes comments and PDF generation.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Quiz Management</div>
+                <div class="feature-content">
+                    <p>Manage quizzes, view scores, and set permissions. Includes question randomization and custom messages.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 7 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Attendance Tracking</div>
+                <div class="feature-content">
+                    <p>Track teachers' and students' attendance with clock-in/out functionality.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 8 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Messaging System</div>
+                <div class="feature-content">
+                    <p>Send and receive messages between teachers, students, and parents.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 9 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Health and Wellness</div>
+                <div class="feature-content">
+                    <p>Manage and track health and wellness activities.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Feature 10 -->
+        <div class="col-md-4 mb-4">
+            <div class="feature-container">
+                <div class="feature-title">Transportation</div>
+                <div class="feature-content">
+                    <p>Manage and track transportation details.</p>
+                </div>
+                <button class="expand-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const expandButtons = document.querySelectorAll('.expand-btn');
+        
+        expandButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const container = this.parentElement;
+                container.classList.toggle('expanded');
+                this.textContent = container.classList.contains('expanded') ? 'Read Less' : 'Read More';
+            });
+        });
+    });
+    </script>
+    
+{% endblock %}
